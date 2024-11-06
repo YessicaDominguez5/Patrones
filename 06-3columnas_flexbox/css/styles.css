@@ -32,7 +32,7 @@ p {
 }
 
 .contenedor {
-    max-width: 1200px;
+    max-width: 1000px;
     width: 95%;
     margin: 0 auto;
 }
@@ -48,3 +48,31 @@ p {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px){
+ .contenido-flex{
+
+    display: flex;
+    justify-content: space-between;
+
+ }  
+ .contenido-principal{
+
+    flex-basis: calc(60%-1rem);
+
+ }  
+ .sidebar{
+
+    flex-basis: calc(20%-1rem);
+
+ }
+
+ .sidebar1{
+
+    order: -1; /*corre el contenido a la izquierda*/
+ }
+ .sidebar2{
+
+
+ }
+}
